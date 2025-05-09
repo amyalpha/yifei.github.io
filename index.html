@@ -4,19 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yifei Lu — Academic Portfolio</title>
-  <meta name="description" content="Yifei Lu — Sociologist and specializing in social stratification, social networks, inequality, and demographic change.">
+  <meta name="description" content="Yifei Lu — Sociologist specializing in social stratification, social networks, inequality, and demographic change.">
+  <meta property="og:type" content="website">
   <meta property="og:title" content="Yifei Lu — Academic Portfolio">
   <meta property="og:description" content="Exploring social networks, inequality, and demographic change.">
   <meta property="og:image" content="https://yourdomain.com/profile.jpg">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Skip link for accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
   <header class="container">
     <h1>Yifei Lu</h1>
     <p>Sociologist | Researcher & Educator</p>
   </header>
 
-  <nav class="site-nav container">
+  <nav class="site-nav container" role="navigation" aria-label="Primary navigation">
     <input type="checkbox" id="nav-toggle" hidden>
     <label for="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">☰</label>
     <ul class="nav-list">
@@ -31,25 +35,25 @@
     </ul>
   </nav>
 
-  <main class="container">
+  <main id="main-content" class="container" role="main">
 
     <section id="about">
       <h2>About Me</h2>
       <figure>
-        <img src="profile.jpg" alt="Yifei Lu" class="profile-pic">
+        <img src="profile.jpg" alt="Portrait of Yifei Lu" class="profile-pic">
         <figcaption>Yifei Lu</figcaption>
       </figure>
-      <p> I am a sociologist and specializing in social stratification, social networks, inequality, and demographic change. My work focuses on the intersections of social capital, gender, and economic disparities.</p>
+      <p>I am a sociologist specializing in social stratification, social networks, inequality, and demographic change. My work focuses on the intersections of social capital, gender, and economic disparities.</p>
     </section>
 
     <section id="cv">
       <h2>Curriculum Vitae</h2>
-      <p><a href="Yifei_Lu_CV.pdf" target="_blank">Download my CV</a></p>
+      <p><a href="Yifei_Lu_CV.pdf" target="_blank" rel="noopener noreferrer">Download my CV</a></p>
     </section>
 
     <section id="research">
       <h2>Research</h2>
-      <p>My research explores education policies for GAI, social capital, cultural capital, and social inequality.</p>
+      <p>My research explores education policy for generative AI, social capital, cultural capital, and social inequality.</p>
     </section>
 
     <section id="publications">
@@ -66,16 +70,16 @@
     <section id="teaching">
       <h2>Teaching</h2>
       <ul>
-        <li>Economic Sociology (Graduate, SWUFE, in Chinese & English)</li>
-        <li>Social Network and Behavior (Undergraduate, SWUFE, in Chinese)</li>
+        <li>Economic Sociology (Graduate, SWUFE; Chinese & English)</li>
+        <li>Social Network and Behavior (Undergraduate, SWUFE; Chinese)</li>
       </ul>
     </section>
 
     <section id="resources">
       <h2>Teaching Resources</h2>
       <ul>
-        <li><a href="resources/economic_sociology.pdf" target="_blank">Economic Sociology - Lecture Slides</a></li>
-        <li><a href="resources/social_network_analysis.pdf" target="_blank">Social Network Analysis - Course Materials</a></li>
+        <li><a href="resources/economic_sociology.pdf" target="_blank" rel="noopener noreferrer">Economic Sociology - Lecture Slides</a></li>
+        <li><a href="resources/social_network_analysis.pdf" target="_blank" rel="noopener noreferrer">Social Network Analysis - Course Materials</a></li>
       </ul>
     </section>
 
@@ -83,8 +87,8 @@
       <h2>Projects</h2>
       <div class="project-grid">
         <article class="project-card">
-          <h3><a href="https://github.com/YifeiLu/network-demo" target="_blank">Social Network Demo</a></h3>
-          <p>Interactive visualization of social networks, built with D3.js.</p>
+          <h3><a href="https://github.com/YifeiLu/network-demo" target="_blank" rel="noopener noreferrer">Eductional policy for GAI</a></h3>
+          <p>Interactive visualization of AI policies, built with D3.js.</p>
         </article>
         <!-- Add more project cards here -->
       </div>
@@ -92,12 +96,12 @@
 
     <section id="contact">
       <h2>Contact</h2>
-      <p>Email: <a href="mailto:luyifei@swufe.edu.cn">yifeilu@swufe.edu.cn</a></p>
+      <p>Email: <a href="mailto:yifeilu@swufe.edu.cn">luyifei@swufe.edu.cn</a></p>
     </section>
 
   </main>
 
-  <footer class="container">
+  <footer class="container" role="contentinfo">
     <p>&copy; 2025 Yifei Lu | Academic Portfolio</p>
   </footer>
 </body>
