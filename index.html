@@ -20,19 +20,21 @@
     <p>Sociologist | Researcher & Educator</p>
   </header>
 
-  <nav class="site-nav container" role="navigation" aria-label="Primary navigation">
-    <input type="checkbox" id="nav-toggle" hidden>
-    <label for="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">☰</label>
-    <ul class="nav-list">
-      <li><a href="#about">About</a></li>
-      <li><a href="#cv">CV</a></li>
-      <li><a href="#research">Research</a></li>
-      <li><a href="#publications">Publications</a></li>
-      <li><a href="#teaching">Teaching</a></li>
-      <li><a href="#resources">Resources</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+  <nav class="site-nav" role="navigation" aria-label="Primary navigation">
+    <div class="container">
+      <input type="checkbox" id="nav-toggle" hidden>
+      <label for="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">☰</label>
+      <ul class="nav-list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#cv">CV</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="#resources">Resources</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
   </nav>
 
   <main id="main-content" class="container" role="main">
@@ -96,7 +98,7 @@
 
     <section id="contact">
       <h2>Contact</h2>
-      <p>Email: <a href="mailto:luyifei@swufe.edu.cn">luyifei@swufe.edu.cn</a></p>
+      <p>Email: <a href="mailto:yifeilu@swufe.edu.cn">yifeilu@swufe.edu.cn</a></p>
     </section>
 
   </main>
@@ -106,18 +108,3 @@
   </footer>
 </body>
 </html>
-
-/* Full-width Navigation =============================================*/
-.site-nav.container {
-  width: 100%;
-  max-width: 100%;
-  padding: var(--spacing-sm) var(--spacing-md);
-}
-.nav-list {
-  justify-content: space-around;
-}
-
-/* Center About Section Content =============================================*/
-section#about {
-  text-align: center;
-}
