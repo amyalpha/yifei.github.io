@@ -59,9 +59,15 @@ body {
   padding: 0 var(--spacing-md);
 }
 
+/* Headings */
 h1, h2, h3, h4, h5 {
   margin-top: 0;
   font-weight: 600;
+}
+
+/* Title color override */
+h1, h2 {
+  color: var(--clr-primary);
 }
 
 a {
