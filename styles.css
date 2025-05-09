@@ -3,7 +3,7 @@
 =============================================*/
 :root {
   /* Colors */
-  --clr-primary: #c62828;
+  --clr-primary: orange;
   --clr-primary-light: #ffcc00;
   --clr-bg-overlay: rgba(255, 255, 255, 0.95);
   --clr-dark-overlay: rgba(30, 30, 30, 0.85);
@@ -193,23 +193,9 @@ footer {
 }
 
 /*=============================================
-  Optional: Light/Dark Toggle
-=============================================*/
-/*
-[data-theme="dark"] {
-  --clr-bg-overlay: rgba(30, 30, 30, 0.85);
-  --clr-text: #eee;
-  --clr-bg-dark: #111;
-}
-[data-theme="light"] {
-  --clr-bg-overlay: rgba(255, 255, 255, 0.95);
-  --clr-text: #222;
-}
-*/
-
-/*=============================================
   Smooth Typography Scaling
 =============================================*/
 @media (min-width: 1200px) {
   html { font-size: 112.5%; } /* 18px */
 }
+
