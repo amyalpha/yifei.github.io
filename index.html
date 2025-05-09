@@ -1,81 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yifei Lu - Academic Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yifei Lu — Academic Portfolio</title>
+  <meta name="description" content="Yifei Lu — Sociologist and specializing in social stratification, social networks, inequality, and demographic change.">
+  <meta property="og:title" content="Yifei Lu — Academic Portfolio">
+  <meta property="og:description" content="Exploring social networks, inequality, and demographic change.">
+  <meta property="og:image" content="https://yourdomain.com/profile.jpg">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body style="background: url('background.jpg') no-repeat center center fixed; background-size: cover; font-family: 'Poppins', sans-serif;">
-    <header style="text-align: center; padding: 40px; background: rgba(0, 0, 0, 0.6); color: white;">
-        <h1>Yifei Lu</h1>
-        <p>Sociologist and Demographer | Researcher & Educator</p>
-    </header>
-    
-    <nav>
-        <ul style="list-style: none; display: flex; justify-content: center; gap: 20px; padding: 15px; background: rgba(255, 255, 255, 0.8);">
-            <li><a href="#about">About</a></li>
-            <li><a href="#cv">CV</a></li>
-            <li><a href="#research">Research</a></li>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#teaching">Teaching</a></li>
-            <li><a href="#resources">Teaching Resources</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    
-    <section id="about" style="text-align: center; padding: 50px; background: rgba(255, 255, 255, 0.8);">
-        <h2>About Me</h2>
-        <img src="profile.jpg" alt="Yifei Lu" class="profile-pic" style="width: 150px; border-radius: 45%;">
-        <p>Welcome to my academic portfolio. I am a sociologist and demographer specializing in social networks, inequality, and demographic change. My work focuses on the intersections of social capital, gender, and economic disparities.</p>
+<body>
+  <header class="container">
+    <h1>Yifei Lu</h1>
+    <p>Sociologist & Demographer | Researcher & Educator</p>
+  </header>
+
+  <nav class="site-nav container">
+    <input type="checkbox" id="nav-toggle" hidden>
+    <label for="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">☰</label>
+    <ul class="nav-list">
+      <li><a href="#about">About</a></li>
+      <li><a href="#cv">CV</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#teaching">Teaching</a></li>
+      <li><a href="#resources">Resources</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+
+    <section id="about">
+      <h2>About Me</h2>
+      <figure>
+        <img src="profile.jpg" alt="Yifei Lu" class="profile-pic">
+        <figcaption>Yifei Lu</figcaption>
+      </figure>
+      <p>Welcome to my academic portfolio. I am a sociologist and specializing in social stratification, social networks, inequality, and demographic change. My work focuses on the intersections of social capital, gender, and economic disparities.</p>
     </section>
-    
-    <section id="cv" style="padding: 50px; background: rgba(255, 255, 255, 0.8);">
-        <h2>Curriculum Vitae (CV)</h2>
-        <p><a href="Yifei_Lu_CV.pdf" target="_blank">Download my CV</a></p>
+
+    <section id="cv">
+      <h2>Curriculum Vitae</h2>
+      <p><a href="Yifei_Lu_CV.pdf" target="_blank">Download my CV</a></p>
     </section>
-    
-    <section id="research" style="padding: 50px; background: rgba(255, 255, 255, 0.8);">
-        <h2>Research</h2>
-        <p>My research explores the education policies for GAI , social capital, cultural capital, and educational inequality.</p>
+
+    <section id="research">
+      <h2>Research</h2>
+      <p>My research explores education policies for GAI, social capital, cultural capital, and educational inequality.</p>
     </section>
-    
-    <section id="publications" style="padding: 50px; background: rgba(255, 255, 255, 0.8);">
-        <h2>Publications</h2>
-        <ul>
-            <li>Lu, Y., Li, W., & Zhou, Z. (2024). School Matters to Whom? The Impact of Educational Resources on Cognitive Inequality. <i>Applied Research Quality Life.</i></li>
-            <li>Li, W., Liang, Z., Zhou, B., & Lu, Y. (2024). Destination Choices of International Students in China: The Impacts of Environmental and Policy Factors. <i>Population Research and Policy Review, 43(5)</i>.</li>
-            <li>Lu, Y., Scandurra, R., & Bonal, X. (2022). An integral model of cultural reproduction: The case of China. <i>Current Sociology, 70(6)</i>.</li>
-            <li>Atterberry, A.L., McCallum, D.G., & Lu, Y. (2022). Interrogating parenting and intergenerational relationships within national and transnational contexts. <i>Current Sociology, 70(6)</i>.</li>
-            <li>Lu, Y. (2021). <i>Social Structure and Educational Inequality : The Causes of Educaitonal Inequality between Rural and Urban Chinese People.</i> Doctoral Dissertation, Universitat Autònoma de Barcelona.</li>
-        </ul>
+
+    <section id="publications">
+      <h2>Publications</h2>
+      <ul>
+        <li>Lu, Y., Li, W., & Zhou, Z. (2024). School Matters to Whom? The Impact of Educational Resources on Cognitive Inequality. <i>Applied Research Quality Life.</i></li>
+        <li>Li, W., Liang, Z., Zhou, B., & Lu, Y. (2024). Destination Choices of International Students in China: The Impacts of Environmental and Policy Factors. <i>Population Research and Policy Review, 43(5).</i></li>
+        <li>Lu, Y., Scandurra, R., & Bonal, X. (2022). An integral model of cultural reproduction: The case of China. <i>Current Sociology, 70(6).</i></li>
+        <li>Atterberry, A.L., McCallum, D.G., & Lu, Y. (2022). Interrogating parenting and intergenerational relationships within national and transnational contexts. <i>Current Sociology, 70(6).</i></li>
+        <li>Lu, Y. (2021). <i>Social Structure and Educational Inequality: The Causes of Educational Inequality between Rural and Urban Chinese People.</i> Doctoral Dissertation, Universitat Autònoma de Barcelona.</li>
+      </ul>
     </section>
-    
-    <section id="teaching" style="padding: 50px; background: rgba(255, 255, 255, 0.8);">
-        <h2>Teaching</h2>
-        <ul>
-            <li>Economic Sociology (Graduate, SWUFE, in Chinese & English)</li>
-            <li>Social Network and Behavior (Undergraduate, SWUFE, in Chinese)</li>
-        </ul>
+
+    <section id="teaching">
+      <h2>Teaching</h2>
+      <ul>
+        <li>Economic Sociology (Graduate, SWUFE, in Chinese & English)</li>
+        <li>Social Network and Behavior (Undergraduate, SWUFE, in Chinese)</li>
+      </ul>
     </section>
-    
-    <section id="resources" style="padding: 50px; background: rgba(255, 255, 255, 0.8);">
-        <h2>Teaching Resources</h2>
-        <p>Here you can find lecture notes and materials.</p>
-        <ul>
-            <li><a href="resources/economic_sociology.pdf" target="_blank">Economic Sociology - Lecture Slides</a></li>
-            <li><a href="resources/social_network_analysis.pdf" target="_blank">Social Network Analysis - Course Materials</a></li>
-        </ul>
+
+    <section id="resources">
+      <h2>Teaching Resources</h2>
+      <ul>
+        <li><a href="resources/economic_sociology.pdf" target="_blank">Economic Sociology - Lecture Slides</a></li>
+        <li><a href="resources/social_network_analysis.pdf" target="_blank">Social Network Analysis - Course Materials</a></li>
+      </ul>
     </section>
-    
-    <section id="contact" style="padding: 50px; background: rgba(255, 255, 255, 0.8);">
-        <h2>Contact</h2>
-        <p>Email: yifeilu@swufe.edu.cn</p>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <article class="project-card">
+          <h3><a href="https://github.com/YifeiLu/network-demo" target="_blank">Social Network Demo</a></h3>
+          <p>Interactive visualization of social networks, built with D3.js.</p>
+        </article>
+        <!-- Add more project cards here -->
+      </div>
     </section>
-    
-    <footer style="text-align: center; padding: 20px; background: rgba(0, 0, 0, 0.7); color: white;">
-        <p>&copy; 2025 Yifei Lu | Academic Portfolio</p>
-    </footer>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:luyifei@swufe.edu.cn">yifeilu@swufe.edu.cn</a></p>
+    </section>
+
+  </main>
+
+  <footer class="container">
+    <p>&copy; 2025 Yifei Lu | Academic Portfolio</p>
+  </footer>
 </body>
 </html>
-
