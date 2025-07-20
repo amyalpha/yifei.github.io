@@ -1,78 +1,192 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
-  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yifei Lu — Academic Portfolio</title>
-  <meta name="description" content="Yifei Lu — Sociologist specializing in social stratification, social networks, inequality, and demographic change.">
-  <meta property="og:type" content="website">
+  <title>Yifei Lu — Sociologist & Academic Portfolio</title>
   <meta name="robots" content="index, follow">
-  <meta property="og:title" content="Yifei Lu — Academic Portfolio">
-  <meta property="og:description" content="Exploring social networks, inequality, and demographic change.">
-  <meta property="og:image" content="https://yourdomain.com/profile.jpg">
+  <meta name="description" content="Yifei Lu, sociologist specializing in social stratification, social networks, inequality, and demographic change.">
+  <meta name="author" content="Yifei Lu">
+  <meta name="keywords" content="Yifei Lu, Sociology, Social Stratification, Social Networks, Inequality, Demography, Research, Academic Portfolio">
+  <link rel="canonical" href="https://YifeiLu.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Yifei Lu — Sociologist & Academic Portfolio">
+  <meta property="og:description" content="Official website of Yifei Lu, sociologist specializing in social stratification, social networks, inequality, and demographic change.">
+  <meta property="og:url" content="https://YifeiLu.github.io/">
+  <meta property="og:image" content="https://YifeiLu.github.io/profile.jpg">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Yifei Lu — Sociologist & Academic Portfolio">
+  <meta name="twitter:description" content="Official website of Yifei Lu, sociologist specializing in social stratification, social networks, inequality, and demographic change.">
+  <meta name="twitter:image" content="https://YifeiLu.github.io/profile.jpg">
   <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Yifei Lu",
+      "url": "https://YifeiLu.github.io/",
+      "image": "https://YifeiLu.github.io/profile.jpg",
+      "jobTitle": "Sociologist, Lecturer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Southwestern University of Finance and Economics"
+      },
+      "email": "mailto:luyifei@swufe.edu.cn",
+      "sameAs": [
+        "https://orcid.org/0000-0002-1234-5678",
+        "https://www.linkedin.com/in/yifei-lu/",
+        "https://www.researchgate.net/profile/Yifei_Lu"
+      ]
+    }
+  </script>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #FFFDEB;
+      color: #333;
+      display: flex;
+    }
+    .sidebar {
+      background: #F2B949;
+      min-width: 220px;
+      max-width: 240px;
+      padding: 2rem 1rem 1rem 1rem;
+      box-shadow: 2px 0 10px #EDD377;
+      height: 100vh;
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .sidebar img {
+      border-radius: 50%;
+      width: 96px;
+      height: 96px;
+      margin-bottom: 1rem;
+      border: 3px solid #F2E829;
+    }
+    .sidebar h1 {
+      font-size: 1.3rem;
+      margin: 0 0 0.5rem 0;
+      color: #F27430;
+      letter-spacing: 0.02em;
+    }
+    .sidebar .contact-links a {
+      display: block;
+      margin: 0.3rem 0;
+      color: #F27430;
+      text-decoration: none;
+      font-size: 0.97rem;
+      word-break: break-all;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .sidebar .contact-links a:hover {
+      color: #F2E829;
+      text-decoration: underline;
+    }
+    .main-content {
+      margin-left: 240px;
+      padding: 2.5rem 2rem;
+      max-width: 850px;
+      width: 100%;
+      background: #EDD377;
+      min-height: 100vh;
+    }
+    nav {
+      margin-bottom: 2.5rem;
+      text-align: left;
+    }
+    nav a {
+      margin-right: 2rem;
+      color: #F27430;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      padding-bottom: 0.1rem;
+      border-bottom: 2px solid transparent;
+      transition: border 0.2s, color 0.2s;
+    }
+    nav a:hover, nav a.active {
+      border-bottom: 2px solid #F2E829;
+      color: #F2E829;
+    }
+    section {
+      margin-bottom: 2.5rem;
+      background: #FFFDEB;
+      padding: 1.5rem 1rem 1rem 1rem;
+      border-radius: 14px;
+      box-shadow: 0 2px 12px #f2b94930;
+    }
+    section h2 {
+      color: #F27430;
+      margin-top: 0;
+      letter-spacing: 0.02em;
+    }
+    footer {
+      margin-top: 2rem;
+      color: #F2B949;
+      font-size: 1rem;
+      text-align: center;
+    }
+    @media (max-width: 700px) {
+      .sidebar {
+        display: none;
+      }
+      .main-content {
+        margin-left: 0;
+        padding: 1rem 0.5rem;
+      }
+    }
+  </style>
 </head>
 <body>
-  <!-- Skip link for accessibility -->
-  <a href="#main-content" class="skip-link">Skip to main content</a>
-
-  <header class="container">
+  <aside class="sidebar">
+    <img src="profile.jpg" alt="Portrait of Yifei Lu">
     <h1>Yifei Lu</h1>
-    <p>Sociologist | Researcher & Educator</p>
-  </header>
-
-  <!-- Full-width navigation background -->
-  <div class="nav-background">
-    <nav class="site-nav" role="navigation" aria-label="Primary navigation">
-      <div class="container">
-        <input type="checkbox" id="nav-toggle" hidden>
-        <label for="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">☰</label>
-        <ul class="nav-list">
-          <li><a href="#about">About</a></li>
-          <li><a href="#cv">CV</a></li>
-          <li><a href="#research">Research</a></li>
-          <li><a href="#publications">Publications</a></li>
-          <li><a href="#teaching">Teaching</a></li>
-          <li><a href="#resources">Resources</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
+    <div class="contact-links">
+      <a href="mailto:luyifei@swufe.edu.cn">Email</a>
+      <a href="https://orcid.org/0000-0002-1234-5678" target="_blank">ORCID</a>
+      <a href="https://www.linkedin.com/in/yifei-lu/" target="_blank">LinkedIn</a>
+      <a href="https://www.researchgate.net/profile/Yifei_Lu" target="_blank">ResearchGate</a>
+    </div>
+  </aside>
+  <main class="main-content">
+    <nav>
+      <a href="#about" class="active">About Me</a>
+      <a href="#cv">CV</a>
+      <a href="#research">Research</a>
+      <a href="#teaching">Teaching</a>
     </nav>
-  </div>
-
-  <main id="main-content" class="container" role="main">
-
-    <section id="about" class="text-center">
+    <section id="about">
       <h2>About Me</h2>
-      <figure>
-        <img src="profile.jpg" alt="Portrait of Yifei Lu" class="profile-pic">
-       </figure>
-      <p>I am a sociologist specializing in social stratification, social networks, inequality, and demographic change. My work focuses on the intersections of social capital, gender, and economic disparities.</p>
+      <p>
+        I am a sociologist and lecturer at Southwestern University of Finance and Economics, specializing in social stratification, social networks, inequality, and demographic change. My research explores the intersections of social capital, gender, and economic disparities in China and internationally.
+      </p>
+      <p>
+        My recent work includes studies on education policy, AI and digital inequality, and the impact of social networks on life chances. I am passionate about applying quantitative methods to address real-world questions in sociology.
+      </p>
     </section>
-
     <section id="cv">
       <h2>Curriculum Vitae</h2>
-      <p><a href="Yifei_Lu_CV.pdf" target="_blank" rel="noopener noreferrer">Download my CV</a></p>
+      <p>
+        <a href="Yifei_Lu_CV.pdf" target="_blank" rel="noopener noreferrer">Download my CV (PDF)</a>
+      </p>
     </section>
-
     <section id="research">
       <h2>Research</h2>
-      <p>My research explores education policy for generative AI, social capital, cultural capital, and social inequality.</p>
-    </section>
-
-    <section id="publications">
-      <h2>Publications</h2>
+      <ul>
+        <li>Educational inequality and digital divides</li>
+        <li>Social capital and labor market outcomes</li>
+        <li>Demography and social policy in China</li>
+      </ul>
+      <p>Selected publications:</p>
       <ul>
         <li>Lu, Y., Li, W., & Zhou, Z. (2024). School Matters to Whom? The Impact of Educational Resources on Cognitive Inequality. <i>Applied Research Quality Life.</i></li>
-        <li>Li, W., Liang, Z., Zhou, B., & Lu, Y. (2024). Destination Choices of International Students in China: The Impacts of Environmental and Policy Factors. <i>Population Research and Policy Review, 43(5).</i></li>
-        <li>Lu, Y., Scandurra, R., & Bonal, X. (2022). An integral model of cultural reproduction: The case of China. <i>Current Sociology, 70(6).</i></li>
-        <li>Atterberry, A.L., McCallum, D.G., & Lu, Y. (2022). Interrogating parenting and intergenerational relationships within national and transnational contexts. <i>Current Sociology, 70(6).</i></li>
-        <li>Lu, Y. (2021). <i>Social Structure and Educational Inequality: The Causes of Educational Inequality between Rural and Urban Chinese People.</i> Doctoral Dissertation, Universitat Autònoma de Barcelona.</li>
+        <li>Lu, Y., Scandurra, R., & Bonal, X. (2022). An integral model of cultural reproduction: The case of China. <i>Current Sociology.</i></li>
       </ul>
     </section>
-
     <section id="teaching">
       <h2>Teaching</h2>
       <ul>
@@ -80,35 +194,9 @@
         <li>Social Network and Behavior (Undergraduate, SWUFE; Chinese)</li>
       </ul>
     </section>
-
-    <section id="resources">
-      <h2>Teaching Resources</h2>
-      <ul>
-        <li><a href="resources/economic_sociology.pdf" target="_blank" rel="noopener noreferrer">Economic Sociology - Lecture Slides</a></li>
-        <li><a href="resources/social_network_analysis.pdf" target="_blank" rel="noopener noreferrer">Social Network Analysis - Course Materials</a></li>
-      </ul>
-    </section>
-
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="project-grid">
-        <article class="project-card">
-          <h3><a href="https://github.com/YifeiLu/network-demo" target="_blank" rel="noopener noreferrer">Social Network Demo</a></h3>
-          <p>Interactive visualization of social networks, built with D3.js.</p>
-        </article>
-        <!-- Add more project cards here -->
-      </div>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:luyifei@swufe.edu.cn">luyifei@swufe.edu.cn</a></p>
-    </section>
-
+    <footer>
+      <p>&copy; 2025 Yifei Lu. All rights reserved.</p>
+    </footer>
   </main>
-
-  <footer class="container" role="contentinfo">
-    <p>&copy; 2025 Yifei Lu | Academic Portfolio</p>
-  </footer>
 </body>
 </html>
