@@ -46,8 +46,10 @@
       margin: 0;
       font-family: 'Roboto', Arial, sans-serif;
       background: #FFFDEB;
-      color: #333;
+      color: #222;                  /* dark grey */
       display: flex;
+      font-size: 1.13rem;           /* slightly larger base font size */
+      line-height: 1.7;             /* improve readability */
     }
     .sidebar {
       background: #FFFDEB;
@@ -70,7 +72,7 @@
       border: 5px solid #FEAFAB;
     }
     .sidebar h1 {
-      font-size: 1.3rem;
+      font-size: 1.4rem;
       margin: 0 0 0.5rem 0;
       color: #FEAFAB;
       letter-spacing: 0.02em;
@@ -81,7 +83,7 @@
       margin: 0.3rem 0;
       color: #F27430;
       text-decoration: none;
-      font-size: 0.97rem;
+      font-size: 1.05rem;
       word-break: break-all;
       font-weight: 500;
       transition: color 0.2s;
@@ -107,7 +109,7 @@
       color: #FEAFAB;
       text-decoration: none;
       font-weight: 600;
-      font-size: 1rem;
+      font-size: 1.08rem;
       padding-bottom: 0.1rem;
       border-bottom: 2px solid transparent;
       transition: border 0.2s, color 0.2s;
@@ -122,14 +124,17 @@
       padding: 1.5rem 1rem 1rem 1rem;
       border-radius: 14px;
       box-shadow: 0 2px 12px #fbd5b040;
+      font-size: 1.15rem;         /* larger in sections */
+      color: #222;                /* dark grey */
     }
     section h2 {
       color: #FEAFAB;
       margin-top: 0;
       letter-spacing: 0.02em;
       font-family: 'Roboto', Arial, sans-serif;
+      font-size: 1.25rem;
     }
-    /* Roboto and dark grey for these sections */
+    /* Ensure Roboto and dark grey for these sections */
     #about, #research, #teaching {
       font-family: 'Roboto', Arial, sans-serif !important;
       color: #222 !important;
@@ -137,7 +142,7 @@
     footer {
       margin-top: 2rem;
       color: #FEAFAB;
-      font-size: 1rem;
+      font-size: 1.07rem;
       text-align: center;
       font-family: 'Roboto', Arial, sans-serif;
     }
@@ -152,6 +157,7 @@
     }
   </style>
 </head>
+
 
 <body>
   <aside class="sidebar">
